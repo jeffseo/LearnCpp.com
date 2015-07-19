@@ -21,4 +21,6 @@ C/C++ both have the design philosophy of "**trust the programmer**" which implie
 
 **IDE to use:**  
 Windows: Microsoft Visual Studios  
-OS X: Xcode
+OS X: Xcode  
+
+Project type for the LearnCPP will be **console projects** (projects that can be run from DOS or linux command-line and by default have no graphical user interface plus compiled into stand-alone executable files)
