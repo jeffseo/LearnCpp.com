@@ -12,10 +12,10 @@ Main difference between C and C++ is that C++ is an **object-oriented language**
 C/C++ both have the design philosophy of "**trust the programmer**" which implies that the compiler will not stand in your way if you try to do something unorthodox that makes sense, but also dangerous.    
 
 **Simplistic approach to development:**  
-Step 1: Define the problem to be solved  
-Step 2: Design a solution  
-Step 3: Write a program that implements the solution  
-Step 4: Compile the program  
-Step 5: Link object files  
-Step 6: Test and debug the program    
+  Step 1: Define the problem to be solved  
+  Step 2: Design a solution  
+  Step 3: Write a program that implements the solution  
+  Step 4: Compile the program  
+  Step 5: Link object files  
+  Step 6: Test and debug the program    
 
