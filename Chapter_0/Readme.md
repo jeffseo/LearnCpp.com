@@ -19,3 +19,6 @@ C/C++ both have the design philosophy of "**trust the programmer**" which implie
   Step 5: Link object files  
   Step 6: Test and debug the program    
 
+**IDE to use:**  
+Windows: Microsoft Visual Studios  
+OS X: Xcode
