@@ -23,4 +23,6 @@ C/C++ both have the design philosophy of "**trust the programmer**" which implie
 Windows: Microsoft Visual Studios  
 OS X: Xcode  
 
-Project type for the LearnCPP will be **console projects** (projects that can be run from DOS or linux command-line and by default have no graphical user interface plus compiled into stand-alone executable files)
+Project type for the LearnCPP will be **console projects** (projects that can be run from DOS or linux command-line and by default have no graphical user interface plus compiled into stand-alone executable files)  
+
+IDE's create a **workspace (or solutions)** for a project which is a container that can hold one or more related projects. However, it is recommended to create new workspaces for each program to make it simpler as well as reduce chances of error.
