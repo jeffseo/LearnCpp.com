@@ -15,3 +15,9 @@ Statements in C++ are terminated by a **semicolon**. (;)
 
 4. **What is a syntax error?**  
 Rules that govern how sentences are constructed in a language is called **syntax**. In C++, syntax defines the rules about how the programs must be constructed in order to be considered valid. Any violation of such rules will result in a **syntax error**.
+
+#Answers from LearnCpp:
+1. A statement is a “complete sentence” that tells the compiler to perform a particular task. An expression is a mathematical entity that evaluates to a value. Expressions are often used inside of statements.
+2. A function is a collection of statements that executes sequentially, typically designed to perform a specific job. A library is a collection of functions packaged for use in multiple programs.
+3. The semicolon (;)
+4. A syntax error is a compiler error that occurs at compile-time when your program violates the grammar rules of the C++ language.
