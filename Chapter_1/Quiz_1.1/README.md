@@ -5,7 +5,7 @@ A **statement** is written to convey to the compiler that we want to perform a t
   2. Assignment statement: assigns a value to a variable e.g. x = 5;
   3. Output statement: outputs the value to the screen e.g. std::cout << x;      
 
-  Therefore, x = 2 + 3; is a valid assignment statement where the 2+3 is an expression and the value 5 is assigned to x.
+  E.g. x = 2 + 3; is a valid assignment statement where the 2+3 is an expression and the value 5 is assigned to x.
 
 2. **What is the difference between a function and a library?**  
 A **function** is a collection of statements that executes sequentially. Every C++ program must contain a special function called main.  
