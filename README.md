@@ -1,2 +1,2 @@
-# LearnCpp.com
-C++ Programming 
+# Learn C++
+http://www.learncpp.com
