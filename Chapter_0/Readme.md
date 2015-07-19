@@ -3,7 +3,7 @@ eg. Binary code
 
 **Because machine language is hard to program with, assembly language and High-level languages such as C/C++ are used instead.** Issues with assembly language is that one assembly program written for one CPU will not run on another CPU and assembly languages require a lot of instructions to do even simple tasks, and are not very readable.      
 
-**High-level languages allow programmers to write programs without being concerned about what kind of computer the program is being run on**. Programs written in high level are translated into a form which the CPU can understand before execution. Two main methods include:
+**On the other hand, high-level languages allow programmers to write programs without being concerned about what kind of computer the program is being run on**. Programs written in high level are translated into a form which the CPU can understand before execution. Two main methods include:
   1. **Compiler:** a program that reads code and produces a stand-alone executable program that the CPU can understand directly.
   2. **Interpreter:** a program that directly executes your code without compiling it into machine code first. Generally scripting languages use interpreters.    
 
