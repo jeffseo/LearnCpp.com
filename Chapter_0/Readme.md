@@ -26,3 +26,7 @@ OS X: Xcode
 Project type for the LearnCPP will be **console projects** (projects that can be run from DOS or linux command-line and by default have no graphical user interface plus compiled into stand-alone executable files)  
 
 IDE's create a **workspace (or solutions)** for a project which is a container that can hold one or more related projects. However, it is recommended to create new workspaces for each program to make it simpler as well as reduce chances of error.
+
+**Build configurations:**
+  1. Debug configuration: Designed to help debug the program and used in development. Turns off all optimizations and includes debugging information. 
+  2. Release configuration: Designed to be used when releasing the program to the public. This optimizes the program in terms of size and performance and does not contain debugging information.
