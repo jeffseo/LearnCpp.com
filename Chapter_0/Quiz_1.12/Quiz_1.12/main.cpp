@@ -7,9 +7,14 @@
 //
 
 #include <iostream>
+#include "io.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    std::cout << "Quiz 1.12!\n";
+    //int x = readNumber();
+    //int y = readNumber();
+    writeAnswer(readNumber()+readNumber());
     return 0;
 }
+

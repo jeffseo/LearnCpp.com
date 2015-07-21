@@ -9,5 +9,7 @@
 #ifndef Quiz_1_12_io_h
 #define Quiz_1_12_io_h
 
+int readNumber();
+void writeAnswer(int x);
 
 #endif

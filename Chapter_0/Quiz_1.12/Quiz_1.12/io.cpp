@@ -7,3 +7,16 @@
 //
 
 #include <stdio.h>
+#include <iostream>
+int readNumber()
+{
+    int number;
+    std::cout << "Enter the first integer: ";
+    std::cin >> number;
+    return number;
+}
+
+void writeAnswer(int x)
+{
+    std::cout << "The sum of inputs: " << x;
+}
