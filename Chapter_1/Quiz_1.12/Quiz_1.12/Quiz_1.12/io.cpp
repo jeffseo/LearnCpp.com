@@ -18,5 +18,5 @@ int readNumber()
 
 void writeAnswer(int x)
 {
-    std::cout << "The sum of inputs: " << x;
+    std::cout << "The sum of inputs: " << x << std::endl;
 }
