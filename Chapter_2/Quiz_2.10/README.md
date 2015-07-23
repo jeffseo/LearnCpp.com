@@ -13,15 +13,18 @@ Why are symbolic constants usually a better choice than literal constants? Why a
 
 Pick the appropriate data type for a variable in each of the following situations. Be as specific as possible. If the answer is an integer, pick a specific integer type (e.g. int16_t) based on range. If the variable should be unsigned or const, say so. Favor signed numbers over unsigned numbers.
 
-a) The age of the user (in years)
-b) Whether the user wants color or not
-c) pi (3.14159265)
-d) The number of pages in a textbook
-e) The price of a stock in dollars (to 2 decimal places)
-f) How many times you’ve blinked since you were born (note: answer is in the millions)
-g) A user selecting an option from a menu by letter
-h) The year someone was born
+a) The age of the user (in years)  
+b) Whether the user wants color or not  
+c) pi (3.14159265)  
+d) The number of pages in a textbook  
+e) The price of a stock in dollars (to 2 decimal places)  
+f) How many times you’ve blinked since you were born (note: answer is in the millions)  
+g) A user selecting an option from a menu by letter  
+h) The year someone was born  
 
+**A:**  
+a) Integer (int8_t)
+b) Boolean  
 **Question 3**
 
 Write the following program: The user is asked to enter 2 floating point numbers (use doubles). The user is then asked to enter one of the following mathematical symbols: +, -, *, or /. The program computes the answer on the two numbers the user entered and prints the results. If the user enters an invalid symbol, the program should print nothing.
