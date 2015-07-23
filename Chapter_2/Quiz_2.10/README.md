@@ -50,7 +50,7 @@ This one is a little more challenging. Write a short program to simulate a ball 
 
 Your program should include a header file named constants.h that includes a namespace called myConstants. In the myConstants namespace, define a symbolic constant to hold the value of gravity (9.8 meters per second). See section 2.9 -- Symbolic constants and the const keyword for a reminder on how to do this.
 
-Use a function to calculate the height of the ball after x seconds. The function can calculate how far the ball has fallen after x seconds using the following formula: distance fallen = gravity_constant * x_seconds2 / 2
+Use a function to calculate the height of the ball after x seconds. The function can calculate how far the ball has fallen after x seconds using the following formula: distance fallen = gravity_constant * x_seconds^2 / 2
 
 Sample output:
 
