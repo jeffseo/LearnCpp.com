@@ -1,12 +1,10 @@
 #2.10 — Chapter 2 comprehensive quiz
 >Note: When using symbolic constants to replace magic numbers, try to use *const* instead of #define  
 
-Comprehensive quiz
-
 **Question 1**
 
-Why are symbolic constants usually a better choice than literal constants? Why are const symbolic constants usually a better choice than #defined symbolic constants?
-
+Why are symbolic constants usually a better choice than literal constants? Why are const symbolic constants usually a better choice than #defined symbolic constants?  
+**A:** Using literal constants (aka. magic numbers) in your program makes your program harder to understand and harder to modify. Symbolic constants help document what the numbers actually represent, and changing a symbolic constant at it’s declaration changes the value everywhere it is used. #define constants do not show up in the debugger and are more likely to have naming conflicts.  
 **Question 2**
 
 Pick the appropriate data type for a variable in each of the following situations. Be as specific as possible. If the answer is an integer, pick a specific integer type (e.g. int16_t) based on range. If the variable should be unsigned or const, say so. Favor signed numbers over unsigned numbers.
