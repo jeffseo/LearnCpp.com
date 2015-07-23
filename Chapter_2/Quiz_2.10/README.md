@@ -23,11 +23,15 @@ g) A user selecting an option from a menu by letter
 h) The year someone was born  
 
 **A:**  
-a) Integer (int8_t)  
+a) Integer (uint8_t)  
 b) Boolean  
 c) Double  
 d) Integer (uint16_t)  
-e)
+e) Float  
+f) Integer (uint64_t)  
+g) Char  
+h) Integer (uint8_t)  
+
 **Question 3**
 
 Write the following program: The user is asked to enter 2 floating point numbers (use doubles). The user is then asked to enter one of the following mathematical symbols: +, -, *, or /. The program computes the answer on the two numbers the user entered and prints the results. If the user enters an invalid symbol, the program should print nothing.
