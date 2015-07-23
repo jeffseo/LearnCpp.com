@@ -61,3 +61,101 @@ At 2 seconds, the ball is at height: 80.4 meters
 At 3 seconds, the ball is at height: 55.9 meters  
 At 4 seconds, the ball is at height: 21.6 meters  
 At 5 seconds, the ball is at height: 0 meters  
+
+#LearnCpp Solutions
+1) Using literal constants (aka. magic numbers) in your program makes your program harder to understand and harder to modify. Symbolic constants help document what the numbers actually represent, and changing a symbolic constant at it’s declaration changes the value everywhere it is used. #define constants do not show up in the debugger and are more likely to have naming conflicts.  
+
+2)   
+a) int8_t wouldn’t be able to hold anybody who lived to be older than 127. Although that’s not likely, it’s possible (or will probably be in the future). So int16_t is probably the best choice.  
+b) bool  
+c) const double  
+d) Since books can often have more than 255 pages but probably never have more than 32,767 pages, int16t is a good choice   here.
+e) float  
+f) int32_t  
+g) char  
+h) int16_t. You can use positive numbers to represent AD birthdates, and negative numbers to represent BC birthdates.  
+
+3)  
+```C++
+#include <iostream>
+ 
+int main()
+{
+    using namespace std;
+    cout << "Enter a double value: ";
+    double dX;
+    cin >> dX;
+ 
+    cout << "Enter a second double value: ";
+    double dY;
+    cin >> dY;
+ 
+    cout << "Enter one of the following: +, -, *, or / ";
+    char chChoice;
+    cin >> chChoice;
+ 
+    if (chChoice == '+')
+        cout << dX << " + " << dY << " is " << dX + dY << endl;
+    else if (chChoice == '-')
+        cout << dX << " - " << dY << " is " << dX - dY << endl;
+    else if (chChoice == '*')
+        cout << dX << " * " << dY << " is " << dX * dY << endl;
+    else if (chChoice == '/')
+        cout << dX << " / " << dY << " is " << dX / dY << endl;
+ 
+    return 0;
+}
+```
+  
+4)  
+Constants.h:  
+```C++
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+ 
+namespace myConstants
+{
+    const double gravity(9.8); // in meters/second squared
+}
+#endif
+```
+  
+Main:  
+```C++
+#include <iostream>
+#include "constants.h"
+ 
+double calculateHeight(double initialHeight, int seconds)
+{
+    double distanceFallen = myConstants::gravity * seconds * seconds / 2;
+    double heightNow = initialHeight - distanceFallen;
+ 
+    // Check whether we've gone under the ground
+    // If so, set the height to ground-level
+    if (heightNow < 0.0)
+        return 0.0;
+    else
+        return heightNow;
+}
+ 
+void calculateAndPrintHeight(double initialHeight, int time)
+{
+    std::cout << "At " << time << " seconds, the ball is at height: " << calculateHeight(initialHeight, time) << "\n";
+}
+int main()
+{
+    using namespace std;
+    cout << "Enter the initial height of the tower in meters: ";
+    double initialHeight;
+    cin >> initialHeight;
+	
+    calculateAndPrintHeight(initialHeight, 0);
+    calculateAndPrintHeight(initialHeight, 1);
+    calculateAndPrintHeight(initialHeight, 2);
+    calculateAndPrintHeight(initialHeight, 3);
+    calculateAndPrintHeight(initialHeight, 4);
+    calculateAndPrintHeight(initialHeight, 5);
+	
+    return 0;
+}
+```
