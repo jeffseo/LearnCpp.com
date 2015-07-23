@@ -69,7 +69,7 @@ At 5 seconds, the ball is at height: 0 meters
 a) int8_t wouldn’t be able to hold anybody who lived to be older than 127. Although that’s not likely, it’s possible (or will probably be in the future). So int16_t is probably the best choice.  
 b) bool  
 c) const double  
-d) Since books can often have more than 255 pages but probably never have more than 32,767 pages, int16t is a good choice   here.
+d) Since books can often have more than 255 pages but probably never have more than 32,767 pages, int16t is a good choice   here.  
 e) float  
 f) int32_t  
 g) char  
